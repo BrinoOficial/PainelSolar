@@ -1,0 +1,41 @@
+usar Servo
+
+Servo meuServo;
+
+Constante numero LDRE = A0;
+Constante numero LDRD = A1;
+Constante numero painel = A2;
+
+numero leituraPainel =0;
+numero leituraD = 0;
+numero leituraE = 0;
+numero pos = 90;
+numero margem = 10;
+
+
+Configuracao(){
+	USB.conectar(9600);
+	meuServo.conectarServo(5);
+	meuServo.escreverAngulo(pos);
+}
+
+Principal(){
+	leituraPainel = lerAnalogico(painel);
+	leituraD = lerAnalogico(LDRD);
+	leituraE = lerAnalogico(LDRE);
+	USB.enviarln(leituraPainel);
+	/*USB.enviar("Direita: ");
+	USB.enviarln(leituraD);
+	USB.enviar("Esquerda: ");
+	USB.enviarln(leituraE);
+	esperar(800);*/
+	se( leituraD > (leituraE+margem)){
+		pos++;
+		meuServo.escreverAngulo(pos);
+		delay(150);
+	}senao se( leituraE >( leituraD+margem)){
+		pos--;
+		meuServo.escreverAngulo(pos);
+		delay(150);
+	}	
+}
