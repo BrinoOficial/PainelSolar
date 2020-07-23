@@ -13,7 +13,7 @@ Para montar esse projeto foram usados os seguintes materiais:
 
 # Circuito
 A montagem do circuito pode ser visto na imagam abaixo:
-![Imagem do circuito](https://github.com/BrinoOficial/PanTiltApontadorLaser/blob/master/Circuito.png)
+![Imagem do circuito](https://github.com/BrinoOficial/PainelSolar/blob/master/PainelSolar_Circuito.png)
 
 # Código
 O código está disponível na linguagem Br.ino e na Arduino dentro da pasta "PainelSolar"
