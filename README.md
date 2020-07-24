@@ -19,7 +19,7 @@ A montagem do circuito pode ser visto na imagam abaixo:
 O código está disponível na linguagem Br.ino e na Arduino dentro da pasta "PainelSolar"
 
 # Projeto finalizado
-Seguem algumas imagem do resultado do projeto e um breve vídeo de seu funcionamento:
+Seguem algumas imagem do resultado do projeto e um breve vídeo de seu funcionamento. Para observar melhor o resultado apresentado na comunicação serial recomendamos abrir o "Plotter Serial" (Ctrl + Shift + L) no lugar do "Monitor Serial".
 ![Imagem do Projeto](https://github.com/BrinoOficial/PainelSolar/blob/master/Fotos/IMG_5304.jpg)
 ![Imagem do Projeto](https://github.com/BrinoOficial/PainelSolar/blob/master/Fotos/IMG_5305.jpg)
 ![Imagem do Projeto](https://github.com/BrinoOficial/PainelSolar/blob/master/Fotos/IMG_5306.jpg)
