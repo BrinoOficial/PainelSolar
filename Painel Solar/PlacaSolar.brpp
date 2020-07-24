@@ -1,11 +1,15 @@
+// Primeiro incluimos a biblioteca para uso do servo
 usar Servo
 
+// Criamos o objeto Servo e o chamamos de meuServo
 Servo meuServo;
 
+// Declaramos constantes com as portas que usaremos
 Constante numero LDRE = A0;
 Constante numero LDRD = A1;
 Constante numero painel = A2;
 
+// Definimos algumas constantes para o funcionamento do codigo
 numero leituraPainel =0;
 numero leituraD = 0;
 numero leituraE = 0;
@@ -15,20 +19,25 @@ numero margem = 10;
 
 Configuracao(){
 	USB.conectar(9600);
+	// Declaramos que o servo esta conectado a porta numero 5 e, em seguida, mandamos ele para a posicao inicial
 	meuServo.conectarServo(5);
 	meuServo.escreverAngulo(pos);
 }
 
 Principal(){
+	// Efetuamos a leitura das portas analogicas e salvamos nas respectivas variaveis
 	leituraPainel = lerAnalogico(painel);
 	leituraD = lerAnalogico(LDRD);
 	leituraE = lerAnalogico(LDRE);
+	// Enviamos a leitura do painel para o monitor serial
 	USB.enviarln(leituraPainel);
+	// Essa parte comentada pode ser usada para testar as leituras dos LDRs
 	/*USB.enviar("Direita: ");
 	USB.enviarln(leituraD);
 	USB.enviar("Esquerda: ");
 	USB.enviarln(leituraE);
 	esperar(800);*/
+	// Com base nas leituras feitas anteriormente e feito o posicionamento do painel
 	se( leituraD > (leituraE+margem)){
 		pos++;
 		meuServo.escreverAngulo(pos);
