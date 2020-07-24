@@ -1,5 +1,5 @@
 # Painel Solar
-Neste projeto utilizamos um Arduíno para controlar a inclinação de uma placa fotovoltaica, melhorando sua eficiência.
+Neste projeto utilizamos um Arduino para controlar a inclinação de uma placa fotovoltaica, melhorando sua eficiência. Usamos, para isso, dois sensores LDR para detectar qual lado possui mais luminosidade. Para fazer o posicionamento do painel foi usado um servo motor 9g. Também foi feita uma pequena base para sustentar a estrutura. Outro ponto importante é que o painel solar foi conectado ao Arduino, por meio de uma porta Analógica, para podermos acompanhar a tensão de saida (não faça essa conexão se sua placa for mais potente).
 
 # Materiais
 Para montar esse projeto foram usados os seguintes materiais:
