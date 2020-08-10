@@ -27,3 +27,6 @@ Seguem algumas imagem do resultado do projeto e um breve vídeo de seu funcionam
 
 # Mais projetos
 Mais projetos como esse podem ser encontrados no nosso site: https://brino.cc
+
+# Encontrou algum erro?
+Caso tenha encontrado algum erro ou tenha alguma sugestão, mande email para: contato@brino.cc
